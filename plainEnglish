@@ -1,0 +1,11 @@
+Website will take someone's allergen score and return an array of the things they are allergic to.
+
+
+
+
+do {
+  allergyArray.put(hashmap(score))
+  score /= score;
+} while (score > 1)
+
+hashmap (1, "eggs")

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="AllergiesTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2016-04-21T19:06:39" hostname="epicodus-55.local" time="0.009">
+  <properties/>
+  <testcase name="AllergiesScore_takesScoreof2_peanuts" classname="AllergiesTest" time="0.003"/>
+  <testcase name="AllergiesScore_takesScoreof1_eggs" classname="AllergiesTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
