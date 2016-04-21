@@ -15,8 +15,6 @@ public class Allergies{
     allergiesScore.put(64, "pollen");
     allergiesScore.put(128, "cats");
 
-    allergiesList.add(allergiesScore.get(score));
-
     Integer scoreCounter = 128;
     do {
       if (score / scoreCounter >= 1){

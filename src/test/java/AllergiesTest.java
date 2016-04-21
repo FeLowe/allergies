@@ -19,13 +19,13 @@ public class AllergiesTest extends FluentTest{
   @ClassRule
   public static ServerRule server = new ServerRule();
 
-  // @Test
-  // public void CoinCombination() {
-  //   goTo("http://localhost:4567/");
-  //   fill("#cents").with("36");
-  //   submit(".btn");
-  //   assertThat(pageSource()).contains(" 1 Quarter 1 Dime 1 Penny");
-  // }
+  @Test
+  public void RootAllergies() {
+    goTo("http://localhost:4567/");
+    fill("#score").with("4");
+    submit(".btn");
+    assertThat(pageSource()).contains("shellfish");
+  }
 
   @Test
   public void AllergiesScore_takesScoreof1_eggs() {
@@ -41,6 +41,13 @@ public class AllergiesTest extends FluentTest{
     ArrayList<String> expected = new ArrayList<>(Arrays.asList("peanuts"));
 
     assertEquals(expected, testAllergiesScore.findAllergies(2));
+  }
+  @Test
+  public void AllergiesScore_takesScoreof224_catsPollenChocolate() {
+    Allergies testAllergiesScore = new Allergies();
+    ArrayList<String> expected = new ArrayList<>(Arrays.asList("cats", "pollen", "chocolate"));
+
+    assertEquals(expected, testAllergiesScore.findAllergies(224));
   }
 
 }
